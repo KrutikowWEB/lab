@@ -1,0 +1,65 @@
+header{
+    padding: 30px 0;
+    position: relative;
+    border-bottom: 1px solid #727272;
+}
+nav{
+    position: relative;
+}
+.hamburger{
+    display: none;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__link{
+        color: $main-color;
+    }
+    &__list{
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+        gap: 60px;
+        list-style: none;
+        margin-right: 60px;
+
+    }
+    &__link{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: $main-color;
+        transition: all .2s;
+        &:hover{
+            font-weight: 700;
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+    &__button{
+        position: relative;
+        padding: 20px 20px 20px 70px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        border: 2px solid $blue-color;
+        border-radius: 10px;
+        &:hover{
+            color: $blue-color;
+            text-decoration: none;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url('../icons/header/phone.svg');
+            width: 35px;
+            height: 35px;
+            top: 15px;
+            left: 25px;
+        }
+    }
+}
