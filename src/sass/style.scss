@@ -1,7 +1,7 @@
 @import 'libs/bootstrap-reboot.min.scss';
 /* @import 'libs/slick.scss'; файл подключать когда надо, если не используется, то удалять */
 /* @import 'libs/animate.scss'; файл подключать когда надо, если не используется, то удалять */
-
+@import 'libs/stylesheet.scss';
 @import 'base/extends';
 @import 'base/variables';
 
@@ -9,6 +9,9 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Nokora Bold';
+    font-style: normal;
+    color: $color-text;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, ul {
@@ -33,10 +36,13 @@ html, body{
 }
 
 .container{
-    width: 1140px;
+    width: 1217px;
     margin: 0 auto;
 }
 @import 'block/header';
+@import 'block/promo';
+@import 'block/btn';
+
 @import 'block/popap';
 @import 'block/accordion';
 

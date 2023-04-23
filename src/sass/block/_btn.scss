@@ -1,0 +1,14 @@
+.btn{
+    padding: 28px 53px;
+    background-color: $blue-color;
+    font-family: 'Inter Regular';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+    border: none;
+    transition: all .1s;
+    &:hover{
+        background-color: $main-color;
+    }
+}

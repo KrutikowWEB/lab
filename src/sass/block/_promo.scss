@@ -1,0 +1,93 @@
+.promo{
+    position: relative;
+    width: 100%;
+    background: #F4F4F4;
+    padding-top: 159px;
+    padding-bottom: 301px;
+    overflow: hidden;
+    &__wrapper{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            background: url('../../img/promo/decor.png') center center / cover no-repeat;
+            top: -137px;
+            left: 643px;
+            width: 861px;
+            height: 904px;
+        }
+    }
+    &__social{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        &_line{
+            width: 176px;
+            height: 0px;
+            border: 1px solid $color-text;
+        }
+        &_icons{
+            display: flex;
+            gap: 17.4px;
+        }
+        &_link{
+            padding: 5px;
+            &:hover{
+                .icon-social{
+                    fill: $main-color;
+                }
+            }
+        }
+    }
+    &__title{
+        width: 567px;
+        margin-top: 16.4px;
+        font-family: 'Source Sans Pro SemiBold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 96px;
+        line-height: 100%;
+        color: #000000;
+    }
+    &__deskr{
+        width: 697px;
+        margin-top: 32px;
+        @extend %text_link;
+    }
+    &__feedback{
+        margin-top: 64px;
+        display: flex;
+        gap: 33px;
+    }
+    &__call{
+        position: relative;
+        padding: 27px 30px 27px 67px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        color: $blue-color;
+        transition: all .1s;
+        &::after{
+            content: '';
+            transition: all .1s;
+            position: absolute;
+            background: url('../../src/icons/promo/CallMe.svg') center center / cover no-repeat;
+            top: 28px;
+            left: 35px;
+            width: 28px;
+            height: 29px;
+        }
+        &:hover{
+            color: $main-color;
+            text-decoration: none;
+            &::after{
+                background: url('../../src/icons/promo/CallMe_main-color.svg') center center / cover no-repeat;
+            }
+        }
+    }
+}
+.icon-social{
+    transition: all .1s;
+}

@@ -1,5 +1,5 @@
 
-/* Гамбургер и адаптивное меню */
+/* //Гамбургер и адаптивное меню
 
 window.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.menu__list'),
@@ -17,56 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
           menu.classList.toggle('menu__list_active');
       })
   })
-})
-
-/* Попап */
-
-let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
-let popup = document.querySelector('.popup'); // Само окно
-let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
-let closePopupButton = document.querySelector('.close-popup'); // Кнопка для скрытия окна
-
-openPopupButtons.forEach((button) => { // Перебираем все кнопки
-  button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
-      e.preventDefault(); // Предотвращаем дефолтное поведение браузера
-      popupBg.classList.add('active'); // Добавляем класс 'active' для фона
-      popup.classList.add('active'); // И для самого окна
-  })
-});
-
-closePopupButton.addEventListener('click',() => { // Вешаем обработчик на крестик
-  popupBg.classList.remove('active'); // Убираем активный класс с фона
-  popup.classList.remove('active'); // И с окна
-});
-
-document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
-  if(e.target === popupBg) { // Если цель клика - фот, то:
-      popupBg.classList.remove('active'); // Убираем активный класс с фона
-      popup.classList.remove('active'); // И с окна
-  }
-});
-
-/* accordion */
-
-const boxes = Array.from(document.querySelectorAll(".accordion__box")); // считываем все элементы аккордеона в массив
-
-boxes.forEach((box) => {
-  box.addEventListener("click", boxHandler); // при нажатии на бокс вызываем ф-ию boxHanlder
-});
-
-function boxHandler(e) {
-  e.preventDefault(); // сбрасываем стандартное поведение
-  let currentBox = e.target.closest(".accordion__box"); // определяем текущий бокс
-  let currentContent = e.target.nextElementSibling; // находим скрытый контент
-  currentBox.classList.toggle("active"); // присваиваем ему активный класс
-  if (currentBox.classList.contains("active")) {
-    // если класс активный ..
-    currentContent.style.maxHeight = currentContent.scrollHeight + "px"; // открываем контент
-  } else {
-    // в противном случае
-    currentContent.style.maxHeight = 0; // скрываем контент
-  }
-}
+}) */
 
 //SLick-slider где при нажатии на конкретную кнопку выходит конкретный слайд!!!! Крутая вещь!!
 
