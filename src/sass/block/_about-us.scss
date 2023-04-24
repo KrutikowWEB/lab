@@ -9,7 +9,7 @@
         &::before{
             position: absolute;
             content: '';
-            background: url('../../icons/about-us/about_img_left.png') center center / cover no-repeat;
+            background: url('../icons/about-us/about_img_left.png') center center / cover no-repeat;
             top: -43px;
             left: -353px;
             width: 457px;
@@ -18,7 +18,7 @@
         &::after{
             position: absolute;
             content: '';
-            background: url('../../icons/about-us/about_img_right.png') center center / cover no-repeat;
+            background: url('../icons/about-us/about_img_right.png') center center / cover no-repeat;
             top: -43px;
             right: -321px;
             width: 457px;
