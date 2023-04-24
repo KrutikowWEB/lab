@@ -1,0 +1,46 @@
+.about-us{
+    width: 100%;
+    background: $backgr-color;
+    padding: 43px 0;
+    margin-top: 72px;
+    overflow: hidden;
+    &__wrapper{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            background: url('../../icons/about-us/about_img_left.png') center center / cover no-repeat;
+            top: -43px;
+            left: -353px;
+            width: 457px;
+            height: 457px;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            background: url('../../icons/about-us/about_img_right.png') center center / cover no-repeat;
+            top: -43px;
+            right: -321px;
+            width: 457px;
+            height: 457px;
+        }
+    }
+    &__title{
+        margin-left: 208px;
+        @extend %text_title;
+    }
+    &__deskr{
+        width: 800px;
+        margin-left: 175px;
+        margin-top: 24px;
+        font-family: 'Inter Regular';
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+    }
+    &__btn{
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+}

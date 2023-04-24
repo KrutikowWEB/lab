@@ -1,0 +1,89 @@
+.laboratory{
+    width: 100%;
+    margin-top: 144px;
+    &__title{
+        @extend %text_title;
+        text-align: center;
+    }
+    &__list{
+        margin-top: 72px;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+        row-gap: 35px;
+        column-gap: 30px;
+    }
+    &__item{
+        background-color: $backgr-color;
+        border-radius: 0 35px 0 0;
+        padding-top: 17px;
+        padding-bottom: 31px;
+        display: flex;
+        flex-direction: column;
+        &:nth-child(4){
+            padding-top: 19px;
+            .laboratory__item_title{
+                margin-top: 20px;
+            }
+        }
+        &:nth-child(5){
+            padding-top: 13px;
+            .laboratory__item_title{
+                margin-top: 13px;
+            }
+        }
+        &:nth-child(6){
+            padding-top: 30px;
+            .laboratory__item_title{
+                margin-top: 30px;
+            }
+        }
+        &_img{
+            display: block;
+            margin: 0 auto;
+        }
+        &_title{
+            margin-left: 32px;
+            margin-top: 43px;
+            font-family: 'Source Sans Pro SemiBold';
+            font-size: 24px;
+            line-height: 100%;
+            color: #000000;
+        }
+        &_deskr{
+            margin-top: 15px;
+            margin-left: 32px;
+            @extend %text_link;
+            line-height: 21px;
+        }
+    }
+    &__shevron{
+        margin-top: 55px;
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $backgr-color;
+        border-radius: 5px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        transition: all .1s;
+        &_right{
+            transform: rotate(180deg);
+        }
+        &:hover{
+            background-color: $blue-color;
+            .shevron{
+                stroke:#FFFFFF;
+            }
+        }
+    }
+}
+
+.shevron{
+    transition: all .1s;
+}

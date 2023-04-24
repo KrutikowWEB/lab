@@ -20,6 +20,9 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 
 html, body{
     height: 100%;
+    img{
+        object-fit: cover;
+    }
 }
 
 .wrapper{
@@ -42,6 +45,11 @@ html, body{
 @import 'block/header';
 @import 'block/promo';
 @import 'block/btn';
+@import 'block/advantages';
+@import 'block/about-us';
+@import 'block/laboratory';
+@import 'block/feedback';
+@import 'block/footer';
 
 @import 'block/popap';
 @import 'block/accordion';

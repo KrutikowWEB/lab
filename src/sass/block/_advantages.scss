@@ -1,0 +1,25 @@
+.advantages{
+    width: 100%;
+    padding-top: 72px;
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 280px;
+        padding: 61px 27px 37px 27px;
+        background-color: $backgr-color;
+        border-radius: 0 35px 0 0;
+    }
+    &__deskr{
+        margin-top: 40px;
+        text-align: center;
+        font-family: 'Source Sans Pro SemiBold';
+        font-size: 24px;
+        line-height: 100%;
+        color: #000000;
+    }
+}

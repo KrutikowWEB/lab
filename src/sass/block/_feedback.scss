@@ -1,0 +1,55 @@
+.feedback{
+    width: 100%;
+    margin-top: 144px;
+    &__wrapper{
+        position: relative;
+        padding: 43px 175px;
+        background-color: $backgr-color;
+        border-radius: 0 0 35px 35px;
+        overflow: hidden;
+        &::before{
+            position: absolute;
+            content: '';
+            background: url('../../img/feedback/feedback_decor.png') center center / cover no-repeat;
+            bottom: 0;
+            right: 0;
+            width: 398px;
+            height: 349px;
+        }
+    }
+    &__title{
+        @extend %text_title;
+        margin-left: 32px;
+    }
+    &__deskr{
+        margin-top: 24px;
+        width: 590px;
+        font-family: 'Inter Regular';
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+.form{
+    margin-top: 27px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__input{
+        z-index: 1;
+        padding: 25px 0 25px 25px;
+        width: 267px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 4.77876px;
+        border: none;
+        font-family: 'Inter Regular';
+        font-size: 23px;
+        line-height: 32px;
+        color: $color-text;
+        outline: none;
+    }
+}
+input::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+}
