@@ -1,7 +1,11 @@
 $('input[name=phone]').mask("+7 (999) 999-99-99");
 
-
-/* //Гамбургер и адаптивное меню
+$('a[href^="#"]').click(function(){
+  var target = $(this).attr('href');
+  $('html, body').animate({scrollTop: $(target).offset().top}, 800);
+  return false;
+  });
+//Гамбургер и адаптивное меню
 
 window.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.menu__list'),
@@ -19,4 +23,4 @@ window.addEventListener('DOMContentLoaded', () => {
           menu.classList.toggle('menu__list_active');
       })
   })
-}) */
+})

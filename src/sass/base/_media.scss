@@ -1,4 +1,4 @@
-@media (max-width:1200px){
+@media (max-width:1250px){
     .container{
         max-width: 960px;
     }
@@ -8,13 +8,26 @@
     .container{
         max-width: 720px;
     }
+    .menu{
+        &__list{
+            gap: 30px;
+        }
+    }
 }
 
 @media (max-width:768px){
     .container{
         max-width: 540px;
     }
-    /* .menu{
+   
+}
+
+@media (max-width:576px){
+    .container{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .menu{
         &__list{
             position: fixed;
             top: 0;
@@ -71,12 +84,5 @@
                 }
             }
         }
-    } */
-}
-
-@media (max-width:576px){
-    .container{
-        width: 100%;
-        padding: 0 10px;
     }
 }
