@@ -13,4 +13,7 @@
     font-size: 64px;
     line-height: 100%;
     color: #000000;
+    @media (max-width:576px){
+        font-size: 40px;
+    }
 }
