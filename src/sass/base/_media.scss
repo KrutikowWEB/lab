@@ -326,6 +326,9 @@
                 z-index: 2;
                 left: -24px;
             }
+            &_footer{
+                top: -79px;
+            }
         }
         &__link{
             color: white;
@@ -386,6 +389,7 @@
         &__call{
             width: 275px;
             font-size: 23px;
+            padding-right: 25px;
         }
     }
     .advantages{
@@ -493,6 +497,6 @@
         }
     }
     .footer{
-        margin: 25px 0;
+        margin: 0;
     }
 }
