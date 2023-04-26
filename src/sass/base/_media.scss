@@ -389,7 +389,11 @@
         &__call{
             width: 275px;
             font-size: 23px;
-            padding-right: 25px;
+            padding-right: 0;
+            padding-left: 62px;
+            &::after{
+                left: 30px;
+            }
         }
     }
     .advantages{
